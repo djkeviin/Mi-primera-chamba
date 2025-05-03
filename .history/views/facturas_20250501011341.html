@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Facturas</title>
+  <link rel="stylesheet" href="../css/facturas.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión de Facturas</h1>
+    <nav>
+      <a href="dashboard.html">Inicio</a>
+      <a href="remisiones.html">Remisiones</a>
+      <a href="../index.html">Salir</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Registrar Factura</h2>
+      <form id="formFactura">
+        <label>Número de Factura:
+          <input type="text" name="numeroFactura" required>
+        </label>
+        <label>Proveedor:
+          <input type="text" name="proveedor" required>
+        </label>
+        <label>Monto:
+          <input type="number" name="monto" required>
+        </label>
+        <label>Fecha:
+          <input type="date" name="fecha" required>
+        </label>
+        <label>IVA:
+          <input type="number" name="iva" disabled>
+        </label>
+        <button type="submit">Registrar Factura</button>
+      </form>
+    </section>
+
+    <section class="lista">
+      <h2>Facturas Registradas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Número</th>
+            <th>Proveedor</th>
+            <th>Monto</th>
+            <th>IVA</th>
+            <th>Fecha</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tablaFacturas">
+          <!-- Datos dinámicos -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="../js/facturas.js"></script>
+</body>
+</html>

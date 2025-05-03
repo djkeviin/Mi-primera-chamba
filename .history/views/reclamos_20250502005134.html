@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Notas de Reclamo</title>
+  <link rel="stylesheet" href="../css/reclamos.css">
+</head>
+<body>
+  <header>
+    <h1>Notas de Reclamo</h1>
+    <nav>
+      <a href="dashboard.html">Inicio</a>
+      <a href="../index.html">Salir</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="formulario">
+      <h2>Registrar Reclamo</h2>
+      <form id="formReclamo">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="producto">Producto:</label>
+        <input type="text" id="producto" name="producto" required>
+
+        <label for="descripcion">Descripción del Reclamo:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea>
+
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+
+    <section class="tabla">
+      <h2>Reclamos Registrados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="listaReclamos">
+          <!-- Reclamos se agregarán aquí -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="../js/reclamos.js"></script>
+</body>
+</html>

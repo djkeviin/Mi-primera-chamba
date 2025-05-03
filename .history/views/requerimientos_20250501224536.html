@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Requerimientos</title>
+  <link rel="stylesheet" href="../css/requerimientos.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión de Requerimientos</h1>
+    <nav>
+      <a href="dashboard.html">Inicio</a>
+      <a href="proveedores.html">Proveedores</a>
+      <a href="../index.html">Salir</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="formRequerimiento">
+        <label>Material:
+          <input type="text" id="material" name="material" required>
+        </label>
+        <label>Cantidad:
+          <input type="number" id="cantidad" name="cantidad" required>
+        </label>
+        <label>Área solicitante:
+          <input type="text" id="area" name="area" required>
+        </label>
+        <label>Fecha:
+          <input type="date" id="fecha" name="fecha" required>
+        </label>
+        <label>Estado:
+          <select id="estado" name="estado" required>
+            <option value="pendiente">Pendiente</option>
+            <option value="aprobado">Aprobado</option>
+            <option value="rechazado">Rechazado</option>
+          </select>
+        </label>
+        <button type="submit">Registrar</button>
+      </form>
+
+    <section class="lista">
+      <h2>Requerimientos Registrados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Cantidad</th>
+            <th>Área</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tablaRequerimientos">
+          <!-- Requerimientos dinámicos -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="../js/requerimientos.js"></script>
+</body>
+</html>
