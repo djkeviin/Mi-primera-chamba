@@ -2,10 +2,11 @@ body {
     font-family: sans-serif;
     background-color: #eef1f5;
     margin: 0;
+   
   }
   
   header {
-    background-color: #673ab7;
+    background-color: #4b0082;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -21,13 +22,40 @@ body {
     padding: 2rem;
   }
   
-  form {
-    background: #fff;
-    padding: 1rem;
+  form input,
+  form select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
     border-radius: 6px;
-    box-shadow: 0 0 5px #ccc;
-    margin-bottom: 2rem;
+    font-size: 1em;
   }
+
+  form button{
+    background-color:#4b0082;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+ 
+ button{
+    background-color:#4b0082;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+
+ }
+  
+  
   
   label {
     display: block;
